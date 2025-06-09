@@ -27,6 +27,55 @@ export const constantRoutes = [
   }
 ]
 
+/**
+ * asyncRoutes 需要权限才能访问
+ * the routes that need to be dynamically loaded based on user roles
+ */
+export const asyncRoutes = [
+
+
+  // {
+  //   path: '/book',
+  //   component: Layout,
+  //   alwaysShow: true,
+  //   name: 'book',
+  //   meta: { title: '图书管理', icon: 'el-icon-s-help' },
+  //   children: [
+  //     {
+  //       path: '/bookCategory',
+  //       name: 'bookCategory',
+  //       component: () => import('@/views/book/bookCategory'),
+  //       meta: { title: '图书分类', icon: 'table' }
+  //     },
+  //     {
+  //       path: '/bookList',
+  //       name: 'bookList',
+  //       component: () => import('@/views/book/bookList'),
+  //       meta: { title: '图书列表', icon: 'table' }
+  //     }
+  //   ]
+  // },
+
+  // {
+  //   path: '/notice',
+  //   component: Layout,
+  //   alwaysShow: true,
+  //   name: 'notice',
+  //   meta: { title: '公告管理', icon: 'el-icon-s-help' },
+  //   children: [
+  //     {
+  //       path: '/noticeList',
+  //       name: 'noticeList',
+  //       component: () => import('@/views/notice/noticeList'),
+  //       meta: { title: '公告列表', icon: 'table' }
+  //     }
+  //   ]
+  // },
+  // // 404 page must be placed at the end !!!
+  // { path: '*', redirect: '/404', hidden: true }
+]
+
+
 const createRouter = () => new Router({
   // mode: 'history', // require service support
   scrollBehavior: () => ({ y: 0 }),
