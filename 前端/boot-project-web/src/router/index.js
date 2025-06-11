@@ -32,7 +32,33 @@ export const constantRoutes = [
  * the routes that need to be dynamically loaded based on user roles
  */
 export const asyncRoutes = [
-
+// {
+  //   path: '/system',
+  //   component: Layout,
+  //   alwaysShow: true,
+  //   name: 'system',
+  //   meta: { title: '系统管理', icon: 'el-icon-s-help' },
+  //   children: [
+  //     {
+  //       path: '/sysUserList',
+  //       name: 'sysUserList',
+  //       component: () => import('@/views/system/sysUserList'),
+  //       meta: { title: '用户管理', icon: 'table' }
+  //     },
+  //     {
+  //       path: '/sysRoleList',
+  //       name: 'sysRoleList',
+  //       component: () => import('@/views/system/sysRoleList'),
+  //       meta: { title: '角色管理', icon: 'tree' }
+  //     },
+  //     {
+  //       path: '/sysMenuList',
+  //       name: 'sysMenuList',
+  //       component: () => import('@/views/system/sysMenuList'),
+  //       meta: { title: '菜单管理', icon: 'tree' }
+  //     }
+  //   ]
+  // },
 
   // {
   //   path: '/book',
